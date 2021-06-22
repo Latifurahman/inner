@@ -1,0 +1,11 @@
+.Testimonial-detail-container p{
+    color: #7d7d7de0;
+}
+.img-part{
+    display: flex;
+    align-items: center;
+}
+.img-part img{
+    margin-right: 20px;
+    clip-path: circle();
+}

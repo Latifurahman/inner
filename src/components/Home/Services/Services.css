@@ -1,0 +1,15 @@
+.services{
+    background-color: #F5F5F5;
+    margin-top: 100px;
+    padding-bottom: 60px;
+}
+.services-title{
+    text-align: center;
+}
+.services-title h1{
+    padding-top: 60px;
+}
+.services-title p{
+    color: #7D7D7D;
+    margin-bottom: 70px;
+}

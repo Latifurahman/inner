@@ -1,0 +1,28 @@
+.carousel-item::before{
+    content: "";
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    background: #000;
+    opacity: 0.7;
+}
+.carousel-caption{
+    bottom: 280px;
+    letter-spacing: 1px;
+}
+.carousel-heading{
+    color: #AD9271;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) and (max-width: 991.98px){
+    .carousel-caption{
+    bottom: 100px;
+    letter-spacing: 1px;
+}
+}

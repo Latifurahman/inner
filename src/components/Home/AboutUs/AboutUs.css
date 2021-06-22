@@ -1,0 +1,59 @@
+.aboutUs{
+    margin-top: 100px;
+}
+.aboutUs-img{
+    height: 800px;
+    width: 100%;
+}
+.btn-read{
+    border: 1px solid #000;
+    padding: 15px;
+    background-color: #000;
+    color: #fff;
+    width: 160px;
+    transition: .5s;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+.btn-read:hover{
+    background-color: #fff;
+    color: #000;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+.aboutUs-text{
+    box-shadow: 4px 0 10px #ddd;
+    padding: 40px;
+    margin-top: 15px;
+}
+.aboutUs-text h5{
+    color: #AD9271;
+    margin-bottom: 20px;
+    font-weight: 520;
+}
+.aboutUs-text h1{
+    color: #181818;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+span,
+.aboutUs-text p{
+    color: #7D7D7D;
+}
+.experience{
+    text-align: center;
+    margin-top: 20px;
+}
+.experience p{
+    color: #acacac;
+}
