@@ -1,0 +1,24 @@
+.login-container{
+    text-align: center;
+    margin-top: 18%;
+}
+.login-btn{
+    border: 2px solid #AD9271;
+    width: 300px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+.google-icon{
+    color: #DB4437;
+    margin-right: 8px;
+}
+.login-btn:hover{
+    background-color: #AD9271;
+    color: #fff;
+}
+.login-btn:hover .google-icon{
+    color: #fff;
+}
