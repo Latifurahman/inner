@@ -3,11 +3,9 @@ import { useState } from 'react/cjs/react.development';
 import './LatestProjectDetail.css';
 
 const LatestProjectDetail = ({project}) => {
-    const [model, setModel] = useState(false);
     const [tempImgSrc, setTempImgSrc] = useState('')
     const getImg = (img) => {
         setTempImgSrc(img)
-        setModel(true)
     }
     return (
         
