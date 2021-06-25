@@ -36,23 +36,23 @@ const Review = () => {
     }
     return (
         <form onSubmit={handleSubmit}>
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Name</label>
-                <input onBlur={handleBlur} type="text" placeholder="Name" class="form-control" name="name"/>
+            <div className="mb-3">
+                <label for="exampleInputEmail1" className="form-label">Name</label>
+                <input onBlur={handleBlur} type="text" placeholder="Name" className="form-control" name="name"/>
             </div>
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Company's name/Designation</label>
-                <input onBlur={handleBlur} type="text" placeholder="Company's name/Designation" name="designation" class="form-control" />
+            <div className="mb-3">
+                <label for="exampleInputEmail1" className="form-label">Company's name/Designation</label>
+                <input onBlur={handleBlur} type="text" placeholder="Company's name/Designation" name="designation" className="form-control" />
             </div>
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Description</label>
-                <input onBlur={handleBlur} type="text" placeholder="Description" class="form-control" name="description" />
+            <div className="mb-3">
+                <label for="exampleInputEmail1" className="form-label">Description</label>
+                <input onBlur={handleBlur} type="text" placeholder="Description" className="form-control" name="description" />
             </div>
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Upload Image</label>
-                <input onChange={handleFileChange} type="file" class="form-control"  />
+            <div className="mb-3">
+                <label for="exampleInputEmail1" className="form-label">Upload Image</label>
+                <input onChange={handleFileChange} type="file" className="form-control"  />
             </div>
-            <button type="submit" class="btn btn-secondary">Submit</button>
+            <button type="submit" className="btn btn-secondary">Submit</button>
         </form>
     );
 };
