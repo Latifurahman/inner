@@ -10,10 +10,10 @@ const TestimonialDetail = ({ testimonial }) => {
             <p>{testimonial.description}</p>
             <div className="row">
                 <div className="col-8 img-part">
-                    <img className="img-fluid" style={{height: '150px', width: '120px'}} src={testimonial.img} alt="" />
+                    <img className="img-fluid" style={{ height: '150px', width: '120px' }} src={`http://localhost:5000/${testimonial.image.img}`} alt="" />
                     <div className="testimonial-detail-title">
                         <h5>{testimonial.name}</h5>
-                        <p><small>{testimonial.profile}</small></p>
+                        <p><small>{testimonial.designation}</small></p>
                     </div>
                 </div>
                 <div className="col-4 d-flex align-items-center">

@@ -1,0 +1,28 @@
+.nav-item{
+    margin: 15px 0;
+}
+.sidebar{
+    height: 100vh;
+    background-color: #7D7D7D;
+}
+.nav-item a{
+    color: #fff !important;
+    text-decoration: none;
+}
+.nav-item a:hover{
+    text-decoration: none !important;
+    background-color: #AD9271;
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.first-item{
+    margin-top: 80px;
+}
+.only a{
+padding: 7px 13px;
+    font-size: 18px;
+}

@@ -1,49 +1,29 @@
 import React from 'react';
 import './Services.css';
-import residential from '../../../images/home.png';
-import restaurant from '../../../images/restaurant.png';
-import corporate from '../../../images/corporate.png';
-import commercial from '../../../images/commercial.png';
-import industry from '../../../images/indutrial.png';
+import residential from '../../../images/residential_img.jpg';
+import restaurant from '../../../images/restaurant_img.jpg';
+import corporate from '../../../images/corporate_img.jpg';
+import commercial from '../../../images/commercial_img.jpg';
+import industry from '../../../images/industry_img.jpg';
 import ServicesDetail from '../ServicesDetail/ServicesDetail';
+import { useState } from 'react';
+import { useEffect } from 'react';
 
-const servicesData = [
-    {
-        name: 'Residential Design',
-        description: 'We bring the right people together to challenge established thinking and drive transform in 2020',
-        img: residential,
-        rangeStart: 3000
-    },
-    {
-        name: 'Restaurant Design',
-        description: 'We bring the right people together to challenge established thinking and drive transform in 2020',
-        img: restaurant,
-        rangeStart: 2000
-    },
-    {
-        name: 'Corporate Design',
-        description: 'We bring the right people together to challenge established thinking and drive transform in 2020',
-        img: corporate,
-        rangeStart: 3500
-    },
-    {
-        name: 'Commercial Design',
-        description: 'We bring the right people together to challenge established thinking and drive transform in 2020',
-        img: commercial,
-        rangeStart: 4000
-    },
-    {
-        name: 'Industrial Design',
-        description: 'We bring the right people together to challenge established thinking and drive transform in 2020',
-        img: industry,
-        rangeStart: 5000
-    },
-    
-]
+
 
 const Services = () => {
+    const [services, setServices] = useState([])
+
+    useEffect(() =>{
+        fetch('http://localhost:5000/services')
+        .then(res => res.json())
+        .then(data => setServices(data))
+    },[])
+    const handleService = data =>{
+
+    }
     return (
-        <section className="services">
+        <section className="services" onClick={handleService}>
             <div className="container">
                 <div className="services-title">
                     <h1>OUR SERVICES</h1>
@@ -52,7 +32,7 @@ const Services = () => {
                 <div className="d-flex justify-content-center">
                     <div className="row">
                         {
-                            servicesData.map(service => <ServicesDetail service={service}></ServicesDetail>)
+                            services.map(service => <ServicesDetail service={service}></ServicesDetail>)
                         }
                     </div>
                 </div>

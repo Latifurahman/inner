@@ -8,7 +8,6 @@ const LatestProjectDetail = ({project}) => {
     const getImg = (img) => {
         setTempImgSrc(img)
         setModel(true)
-        console.log(img)
     }
     return (
         

@@ -6,16 +6,16 @@
 }
 .nav-link{
     color: #fff !important;
-    font-size: 12px;
+    font-size: 12px !important;
     letter-spacing: 1px;
     font-weight: 300;
 }
 .navbar-brand{
     color: #fff !important;
-    font-size: 30px;
+    font-size: 25px;
 }
 .nav-link:hover{
-    color: #AD9271 !important;
+    color: #fff !important;
 }
 
 

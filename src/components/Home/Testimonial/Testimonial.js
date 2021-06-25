@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import TestimonialDetail from '../TestimonialDetail/TestimonialDetail';
 import clara from '../../../images/clara.jpg';
 import steven from '../../../images/steven.jpg';
@@ -37,6 +37,13 @@ const testimonialData = [
 ]
 
 const Testimonial = () => {
+    const [testimonial, setTestimonial] = useState([]);
+    useEffect(() =>{
+        fetch('http://localhost:5000/testimonial')
+        .then(res => res.json())
+        .then(data => setTestimonial(data))
+    }, [])
+        
     const settings = {
         dots: true,
         infinite: true,
@@ -65,7 +72,7 @@ const Testimonial = () => {
                         </div>
                         <Slider {...settings}>
                             {
-                                testimonialData.map(testimonial => <TestimonialDetail testimonial={testimonial}></TestimonialDetail>)
+                                testimonial.map(testimonial => <TestimonialDetail testimonial={testimonial}></TestimonialDetail>)
                             }
                         </Slider>
                         </div>
