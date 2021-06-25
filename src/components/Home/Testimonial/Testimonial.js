@@ -72,7 +72,7 @@ const Testimonial = () => {
                         </div>
                         <Slider {...settings}>
                             {
-                                testimonial.map(testimonial => <TestimonialDetail testimonial={testimonial}></TestimonialDetail>)
+                                testimonial.map(testimonial => <TestimonialDetail key={testimonial._id} testimonial={testimonial}></TestimonialDetail>)
                             }
                         </Slider>
                         </div>

@@ -1,15 +1,10 @@
 import React from 'react';
-import { useState } from 'react/cjs/react.development';
 import './LatestProjectDetail.css';
 
 const LatestProjectDetail = ({project}) => {
-    const [tempImgSrc, setTempImgSrc] = useState('')
-    const getImg = (img) => {
-        setTempImgSrc(img)
-    }
     return (
         
-        <div className="col-md-4 project-img-container" onClick={() => getImg(project.img)}>
+        <div className="col-md-4 project-img-container">
             
                 <img className="img-fluid project-single-img" src={project.img} alt="" />
             
